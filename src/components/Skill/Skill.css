@@ -1,0 +1,42 @@
+.card_body{
+    border-radius: 16px;
+   
+    background-color: #212121;
+opacity: 0.7;
+    color: white;
+    box-shadow: 3px 14px 45.25px #7c787834;
+}
+.card_body:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+background-color: black;
+}
+.skill_icons{
+    width: 8rem;
+    padding: 1rem;
+    
+}
+.icons:hover{
+color: #ffff;
+}
+@media only screen and (max-width:595px){
+
+.card_body{
+    
+    width:auto;
+
+}
+.card_texts{
+    display: none;
+}
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+justify-content: center;
+}
+.skill_heading{
+    text-align: center;
+}
+}
