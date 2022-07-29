@@ -1,7 +1,8 @@
 
 .logo-btn{
     position: absolute;
-    left: 4%;
+    left:0;
+    margin-left: 3.2rem;
     z-index: 100;
     padding: 32px;
 
@@ -28,7 +29,7 @@ margin-top: 20px;
 
 @media only screen and (max-width:595px){
 .nav_links{
-    margin: 26px 0 26px 50px;
+    margin-left: 0;
     
 }
 .logo-btn{
@@ -38,9 +39,38 @@ margin-top: 20px;
 }
 .ak{
     display: block;
+margin-left: -2rem;
+
 }
+}
+.navbar.active{
+    background: rgba(0, 0, 0, 0.725);
+    backdrop-filter: blur(4px);
+    transition:  0.4s ease;
+}
+.navbar{
+background: transparent;
+font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+color: rgb(246, 246, 246);
+cursor: default;
+box-sizing: border-box;
+position: fixed;
+z-index: 5;
+top: 0px;
+left: 0px;
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+flex-direction: column;
+height: 6rem;
+padding: 0px 1rem;
+width: 100vw;
+z-index: 100;
+
 }
 
+
+/*scroll behaviouur pe animaiton laganni he*/
 /*Media quieres of logo*/
 /* @media only screen and (max-width:960px){
     .nav-links{

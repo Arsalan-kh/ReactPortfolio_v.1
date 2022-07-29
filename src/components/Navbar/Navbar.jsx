@@ -1,5 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react'
+import { useState } from 'react'
 // import { Popover, Transition } from '../@headlessui/react'
 // import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Giticon from "../../Icons/github-outline.svg"
@@ -10,12 +11,26 @@ import './Navbar.css';
 
 
 const Navbar = () => {
+  const [navbar,setNavbar]=useState(false)
+
+  const changeBg=()=>{
+    if(window.scrollY>=80){
+      setNavbar(true)
+      
+    }
+    else{
+      setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll',changeBg)
   return (
     <>
 
 
 <div >
-<div className=" fixed top-0 w-full z-30">
+  
+<nav className={navbar ? 'navbar active' : 'navbar' }>
+  <div className=" fixed  top-0 w-full z-30">
 <div className="nav_links mx-12 z-10 ">
 <a href=""><svg className='hover:blue-800' xmlns="http://www.w3.org/2000/svg" width="32.144" height="31.188" viewBox="0 0 32.144 31.188">
   <path id="github-alt" d="M31.05,6.824a7.437,7.437,0,0,1,2.082,5.229c0,7.22-4.581,9.336-8.887,9.959a5.191,5.191,0,0,1,.694,2.864v5.1a.931.931,0,0,1-.972,1,1.165,1.165,0,0,1-.79-.288.932.932,0,0,1-.321-.708v-5.1a3.214,3.214,0,0,0-1.111-2.864l.694-1.619c4.305-.5,8.749-1.743,8.749-8.465a6.106,6.106,0,0,0-1.944-4.358l-.278-.995A4.993,4.993,0,0,0,29.1,2.842a11.37,11.37,0,0,0-4.441,1.868l-.835.123a22.585,22.585,0,0,0-10,0L13,4.709C10.5,3.34,9.112,2.966,8.416,2.966A4.96,4.96,0,0,0,8.553,6.7L8.277,7.7a5.954,5.954,0,0,0-2.083,4.358c0,6.6,4.166,7.967,8.748,8.465l.556,1.619a3.112,3.112,0,0,0-1.111,2.739V30.1a.932.932,0,0,1-.321.708,1.229,1.229,0,0,1-1.58,0,.932.932,0,0,1-.321-.708V27.241C7.583,28.113,5.777,26,4.389,24.379c-.694-.747-1.25-1.37-1.944-1.494a1.27,1.27,0,0,1-.417-1.121.922.922,0,0,1,1.251-.623,5.7,5.7,0,0,1,3.052,2.117c1.251,1.494,2.5,2.862,6.25,2.117v-.5a4.25,4.25,0,0,1,.694-2.864C9.109,21.267,4.25,19.15,4.25,12.055A7.439,7.439,0,0,1,6.333,6.826a7.958,7.958,0,0,1,.417-5.1l.694-.5c.278-.125,2.222-.5,6.247,1.742a23.208,23.208,0,0,1,10.137,0C27.717.6,29.8.973,30.078,1.1l.694.5A7.553,7.553,0,0,1,31.05,6.824Z" transform="translate(-1.488 -0.411)" fill="#fafafa" stroke="#fafafa" stroke-width="1"/>
@@ -54,6 +69,10 @@ const Navbar = () => {
 
 </div>
 </div>
+</nav>
+
+
+
  </div>
       
     </>

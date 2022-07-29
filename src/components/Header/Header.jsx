@@ -124,7 +124,7 @@ const Header = () => {
 
 <div class="container px-3 mx-auto flex flex-wrap  flex-row md:flex-row items-center">
   {/* <!--Left Col--> */}
-  <div class="flex flex-col w-full md:text-left mx-auto md:w-2/5 left-content justify-center items-start text-center md:text-left">
+  <div class="flex flex-col w-full  md:w-auto sm:w-auto lg:w-2/5  mx-auto md:w-full  left-content justify-center lg:items-start md:items-center  lg:text-left md:text-left">
 
     <h2 class="my-3 text-4xl tracking-light text-white font-normal leading-tight">Hi I'm Arsalan Khan </h2>
     <h1 class="my-1 text-3xl tracking-light text-gray-600 font-medium leading-tight">Frontend Developer </h1>
@@ -138,12 +138,12 @@ const Header = () => {
 
 
 
-    <button class="mx-auto lg:mx-0 hover:bg-black hover:text-white bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg">Contact ME</button>
+    <button class="mx-auto lg:mx-0 hover:bg-black hover:text-white bg-indigo-600 text-gray-100 font-bold rounded my-6 py-3 px-8 shadow-lg">Contact ME</button>
 
   </div>
   {/* <!--Right Col--> */}
-  <div class="relative w-full avatar_container  z-10  bottom-24 md:w-3/5 py-6 text-center">
-    <div className=' bg-cover   -z-10' ><img className='circle absolute right-36 -z-10' src={circle} alt="" /></div>
+  <div class="relative w-full avatar_container lg:mt-6 md:mt-12 z-10 left-0 bottom-24 md:w-2/4 py-6 text-center">
+    <div className=' bg-cover   -z-10' ><img className='circle absolute right-24 bottom-12 -z-10' src={circle} alt="" /></div>
     <img class="avatar w-full md:w-3/5 lg:w-3/5 mx-auto" src={Avatar}/>
   </div>
 
