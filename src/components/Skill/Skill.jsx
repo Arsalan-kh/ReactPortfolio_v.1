@@ -41,7 +41,7 @@ const Skill = () => {
   return (
     <div className=' '>
       <div>
-      <Fade left duration={700}>
+      <Fade left delay={1000}>
       <div className='skill_heading'>      <h1 className='mb-12  font-bold container   text-xl  lg:mt-12 px-12 text-white z-10'>Skills</h1></div>
       </Fade>
       </div>

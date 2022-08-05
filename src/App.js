@@ -1,5 +1,6 @@
 
 import './App.css';
+import FeatureProject from './components/FeatureProject/FeatureProject';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
@@ -17,6 +18,7 @@ function App() {
     <Navbar/>
     <Header/>
      <Skill/>
+     <FeatureProject/>
     <Projects />
     <Footer/> 
     </div>
