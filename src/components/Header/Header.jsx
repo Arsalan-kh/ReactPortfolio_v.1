@@ -93,10 +93,10 @@ const Header = () => {
 </div>
 
 </div> */}
-<div className=" relative bg-wrapper">
+<div className=" relative  bg-wrapper">
 
 {/* left_diamond */}
-<div className=" left_diamond">
+<div className=" left_diamond ">
     <svg xmlns="http://www.w3.org/2000/svg" width="1062.033" height="1073.871" viewBox="0 0 1062.033 1073.871">
   <rect id="Rectangle_83" data-name="Rectangle 83" width="817" height="697" rx="112" transform="matrix(0.656, 0.755, -0.755, 0.656, 526.033, 0)" fill="#242329"/>
 </svg>
@@ -125,7 +125,7 @@ const Header = () => {
     </div>
       
 
-<div class="pt-24">
+<div class="pt-24 ">
 
 <div class="container px-3 mx-auto flex flex-wrap  flex-row md:flex-row items-center">
   {/* <!--Left Col--> */}
@@ -143,7 +143,7 @@ const Header = () => {
 
 
 
-    <a href='https://mail.google.com/mail/?tab=mm&authuser=0' target="blank" class="mx-auto lg:mx-0 hover:bg-black hover:text-white bg-indigo-500 text-gray-100 font-bold rounded my-6 py-3 px-8 shadow-lg">Contact Me</a>
+    <a href='https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSKkHmCfxTSQtgKlCdSnGqmVPJgkdXjlkDQkmxKCcnPgmzDlTklLkFwptLQLSnVXtHbFmlzh' target="blank" class="mx-auto z-100 lg:mx-0 hover:bg-black hover:text-white bg-indigo-500 text-gray-100 font-bold rounded my-6 py-3 px-8 shadow-lg">Contact Me</a>
 
   </div>
   {/* <!--Right Col--> */}
