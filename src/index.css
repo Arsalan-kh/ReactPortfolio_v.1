@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto';
+  font-family:sans-serif, 'Roboto'
+  ;
 overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

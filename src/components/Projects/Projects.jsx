@@ -2,12 +2,15 @@ import React from 'react'
 import './Projects.css';
 import icon1 from'../../Icons/repolink.svg'
 import icon2 from'../../Icons/share.svg'
+import { Slide } from 'react-reveal';
+import { Zoom } from 'react-reveal';
+import { Fade } from 'react-reveal';
 const Projects = () => {
   const cardInfo=[
     {giticon:icon1,repolink: "https://github.com/Arsalan-kh/Recipes-App.git",  livelinks:"https://arsalan-kh.github.io/Recipes-App/" , livelinkicon:icon2,  title:"Recipe Cards",date:"30-jul-2021",desc:"Amazing mobile friendly recipe cards using Food API, It fetch the data from website and render it card.  "},
     {giticon:icon1,repolink:"https://github.com/Arsalan-kh/Filter-Product" ,  livelinks:"https://arsalan-kh.github.io/Filter-Product/" , livelinkicon:icon2, title:"Filter Products",date:"17-jul-2021",desc:"It is a simple small project with filter functionality. It filtered the products when user select categories."},
     {giticon:icon1,repolink:"https://github.com/Arsalan-kh/Weather_API.git" ,  livelinks:"https://arsalan-kh.github.io/Weather_API/" , livelinkicon:icon2, title:"Weather API",date:"27-jul-2021",desc:"Mobile responsive Weather App.This app has functionality of getting weather details based on city name searched by user."},
-    {giticon:icon1,repolink:"https://github.com/Arsalan-kh/Grocery-list-App.git" ,  livelinks:"https://arsalan-kh.github.io/Grocery-list-App/" , livelinkicon:icon2, title:"Todo List UI",date:"7-jul-2021",desc:"It a classroom given task given by a instructor to design a same design as shown in screen shot."},
+    {giticon:icon1,repolink:"https://github.com/Arsalan-kh/Todo-List-UI.git" ,  livelinks:"https://arsalan-kh.github.io/Todo-List-UI/" , livelinkicon:icon2, title:"Todo List UI",date:"7-jul-2021",desc:"It a classroom given task given by a instructor to design a same design as shown in screen shot."},
     {giticon:icon1,repolink:"https://github.com/Arsalan-kh/Text-generator" ,  livelinks:"https://arsalan-kh.github.io/Text-generator/" , livelinkicon:icon2, title:"Text Generator",date:"27-jun-2021",desc:"This Application checks whether the string is palandrome or not.If it's a palindrome then show a message to user and vice versa."},
     {giticon:icon1,repolink:"https://github.com/Arsalan-kh/News-API.git" ,  livelinks:"https://arsalan-kh.github.io/News-API/" , livelinkicon:icon2, title:"News API ",date:"12-Aug-2021",desc:"A News App using news fetch api it's fetch news data and render it in the form of cards.completely mobile responsive."},
   ]
@@ -26,7 +29,7 @@ const Projects = () => {
         </div>
       </div> */}
 
-
+<Fade  bottom count  duration={1800}  >
     <div class="">
       <div class="bg-zinc-800 backdrop-brightness-50 card m-2 cursor-pointer border-2 border-gray-800 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
         <div class="m-3 p-3 flex flex-row justify-between">
@@ -52,6 +55,7 @@ const Projects = () => {
       </div>
       </div>
     </div>
+    </Fade>
   </div>
     
     )
@@ -60,10 +64,13 @@ const Projects = () => {
     <div>
         <h1 className='mb-12 text-white project_heading font-bold container   text-xl  lg:mt-12 px-12  z-10'>Projects</h1>
         
-        <p className='p-4  w-11/12 project_alert contianer tracking-widest mx-auto px-12'>   For more projects visit my github profile to </p>
+        <p className='p-4  w-11/12 project_alert contianer tracking-widest mx-auto px-12'>   For more projects visit to my github profile  </p>
+    
+      
       <div className="project_cards border-0 container mx-auto grid md:grid-cols-2 lg:grid-cols-3  sm:grid-cols-1   mt-4 ">
           {cardInfo.map(Cardrender)}
           </div>
+
 
     </div>
   )

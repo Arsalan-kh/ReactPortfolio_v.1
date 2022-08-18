@@ -26,6 +26,7 @@ const Skill = () => {
                   return(
                     <div class="">
   
+                    <Fade   bottom duration={1000} delay={200}>
                     <div class="">
                       <div class="card_body flex flex-row  rounded overflow-hidden h-auto sm:flex-col lg:flex-row ">
                         <img   class="skill_icons block h-auto icons  w-full lg:w-48 flex-none bg-cover h-24" src={card.icons}/>
@@ -35,22 +36,26 @@ const Skill = () => {
                         </div>
                       </div>
                     </div>
+                    </Fade>
                     </div>
                   )
                 }
   return (
     <div className=' '>
-      <div>
-      <Fade left delay={1000}>
+
+      
       <div className='skill_heading'>      <h1 className='mb-12  font-bold container   text-xl  lg:mt-12 px-12 text-white z-10'>Skills</h1></div>
-      </Fade>
-      </div>
+      
+  
+      {/*Fade animation */}
       
 <div className="card_container w-auto grid mt-6 mb-24 sm:mx-24 gap-x-4 gap-y-8 grid-cols-1 mt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 place-item-center ">
-          {cardInfo.map(Cardrender)}
-          </div>
        
+          {cardInfo.map(Cardrender)}
+        
           </div>
+          </div>
+        
 
   )
 }

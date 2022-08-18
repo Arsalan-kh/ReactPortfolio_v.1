@@ -111,8 +111,8 @@ const Header = () => {
       <div>
       <Fade bottom delay={550}>
     <div className=" absolute right-64 top-12 right_diamond2">
-    <svg className='opacity-100 ' xmlns="http://www.w3.org/2000/svg" width="70" height="66" viewBox="0 0 70 66">
-  <path id="Path_727" data-name="Path 727" d="M39.019,78.368a15.375,15.375,0,0,1,0-22.648L57.034,38.735a17.721,17.721,0,0,1,24.02,0L99.069,55.72a15.375,15.375,0,0,1,0,22.648L81.054,95.354a17.721,17.721,0,0,1-24.02,0Z" transform="translate(-34.044 -34.044)" fill="#242329"/>
+    <svg className='opacity-25 ' xmlns="http://www.w3.org/2000/svg" width="70" height="66" viewBox="0 0 70 66">
+  <path id="Path_727" data-name="Path 727" d="M39.019,78.368a15.375,15.375,0,0,1,0-22.648L57.034,38.735a17.721,17.721,0,0,1,24.02,0L99.069,55.72a15.375,15.375,0,0,1,0,22.648L81.054,95.354a17.721,17.721,0,0,1-24.02,0Z" transform="translate(-34.044 -34.044)" fill="#eee"/>
 </svg>
     </div>
     <div className='absolute left-10 bottom-10' >
@@ -143,12 +143,12 @@ const Header = () => {
 
 
 
-    <a href='https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSKkHmCfxTSQtgKlCdSnGqmVPJgkdXjlkDQkmxKCcnPgmzDlTklLkFwptLQLSnVXtHbFmlzh' target="blank" class="mx-auto z-100 lg:mx-0 hover:bg-black hover:text-white bg-indigo-500 text-gray-100 font-bold rounded my-6 py-3 px-8 shadow-lg">Contact Me</a>
+    <a href="mailto:arsalankhan871483@gmail.com" target="blank" class="mx-auto z-100 lg:mx-0 hover:bg-black hover:text-white bg-indigo-500 text-gray-100 font-bold rounded my-6 py-3 px-8 shadow-lg">Contact Me</a>
 
   </div>
   {/* <!--Right Col--> */}
   <div class="relative w-full avatar_container lg:mt-6 md:mt-12 z-10 left-0 bottom-24 md:w-2/4 py-6 text-center">
-    <div className=' bg-cover   -z-10' ><img className='circle absolute right-24 bottom-12 -z-10' src={circle} alt="" /></div>
+    <div className=' bg-cover   -z-10' ><img className='circle absolute right-24 bottom-12  -z-10' src={circle} alt="" /></div>
     <img class="avatar w-full md:w-3/5 lg:w-3/5 mx-auto" src={Avatar}/>
   </div>
 
