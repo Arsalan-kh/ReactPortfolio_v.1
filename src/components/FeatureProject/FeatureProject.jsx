@@ -4,13 +4,14 @@ import { useState } from "react";
 import {Carousel} from '3d-react-carousal';
 import pic1 from '../../Icons/img1.png'
 import pic2 from '../../Icons/img2.png'
+import pic3 from '../../Icons/wape-landing.png'
 
 import circle from "../../Icons/circle.svg"
 
 let slides = [
   <a href="https://62fe7bb34914420ff9627aa8--sparkly-stardust-835b06.netlify.app/"><img className='hover:opacity:95 hover: shadow-2xl hover:bg-white' src={pic1} alt="1" /></a>, 
   <a href="https://strong-sopapillas-cae5e7.netlify.app/"><img className='hover:opacity:95 hover: shadow-2xl hover:bg-white' src={pic2} alt="2" /></a>,
-  <a href="https://strong-sopapillas-cae5e7.netlify.app/"><img className='hover:opacity:95 hover: shadow-2xl hover:bg-white' src={pic2} alt="3" /></a>
+  <a href="https://euphonious-macaron-d51121.netlify.app/"><img className='hover:opacity:95 hover: shadow-2xl hover:bg-white' src={pic3} alt="3" /></a>
  
    ];
 
@@ -38,7 +39,7 @@ const FeatureProject = () => {
   
       {/* slider div */}
       <div className=''>
-      <Carousel slides={slides} autoplay={true} interval={5000} onSlideChange={callback}/>
+      <Carousel  slides={slides} autoplay={true} interval={5000} onSlideChange={callback}/>
       </div>
         {/* content div */}
         <div className='slider-info  sm:w-12/12 md:w-12/12 sm:grid-cols-4 my-12 '>

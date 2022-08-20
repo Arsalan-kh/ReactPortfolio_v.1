@@ -4,6 +4,23 @@ padding: 22px;
 
 
 }
+.fa-arrow-left, .fa-arrow-right{
+    color: #6b7cffea;
+    background-color: #242329f8;
+    padding: 12px;
+    border-radius: 40px;
+}
+.fa-arrow-right:hover{
+    opacity: 0.8;
+}
+.fa-arrow-left:hover{
+    opacity: 0.8;
+}
+.slider-right>div,.slider-left>div{
+    border:none !important;
+}
+
+
 @media (max-width:770px){
 .slider-info{
 width: 100%;
